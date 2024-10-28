@@ -1,5 +1,9 @@
 import 'package:coconut_note/common/widgets/nt_list_tile.dart';
 import 'package:coconut_note/domain/entities/new_note.dart';
+import 'package:coconut_note/presentation/screens/my_note/widgets/record_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/my_note/widgets/upload_audio_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/my_note/widgets/upload_text_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/my_note/widgets/web_link_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:coconut_note/common/bottom_sheet/bottom_sheet_common.dart';
@@ -24,6 +28,7 @@ class NewNoteBottomSheet extends BottomSheetCommon {
       const NewNote(name: "Upload text", pathIcon: Ics.uploadText),
       const NewNote(name: "Use a web link", pathIcon: Images.uploadLink),
     ];
+
     return Container(
       height: MediaQuery.of(context).size.height * 0.65,
       width: MediaQuery.of(context).size.width,
@@ -79,7 +84,23 @@ class NewNoteBottomSheet extends BottomSheetCommon {
                           ),
                           text: noteFunction[index].name,
                           subText: index == noteFunction.length -1 ? 'Youtube, website, Google Drive' : '',
-                          onPressed: () => appRouter.push(const FriendDetailRoute()),
+                          onPressed: () {
+                            if(index == 0){
+                              RecordBottomSheet(onChanged: (int value) {  }).showBottomSheet(context);
+                            }
+                            if(index == 1){
+                              UploadAudioBottomSheet(onChanged: (int value) {  }).showBottomSheet(context);
+                            }
+                            if(index == 2){
+                              UploadTextBottomSheet(onChanged: (int value) {  }).showBottomSheet(context);
+                            }
+                            if(index == 3){
+                              UploadTextBottomSheet(onChanged: (int value) {  }).showBottomSheet(context);
+                            }
+                            if(index == 4){
+                              WeblinkBottomSheet(onChanged: (int value) {  }).showBottomSheet(context);
+                            }
+                          },
                           onPressedLeading: () {},
                           trailing: const SizedBox(),
                         );

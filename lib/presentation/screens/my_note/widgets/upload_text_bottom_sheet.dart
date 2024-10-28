@@ -11,10 +11,10 @@ import 'package:coconut_note/common/widgets/zp_text.dart';
 import 'package:coconut_note/utils/resources/resources.dart';
 import 'package:coconut_note/utils/style/app_colors.dart';
 import 'package:coconut_note/utils/style/text_styles.dart';
-class UploadtTextBottomSheet extends BottomSheetCommon {
+class UploadTextBottomSheet extends BottomSheetCommon {
   ValueChanged<int> onChanged;
 
-  UploadtTextBottomSheet({required this.onChanged});
+  UploadTextBottomSheet({required this.onChanged});
 
   @override
   Widget create(BuildContext context) {
