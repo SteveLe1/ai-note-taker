@@ -2,18 +2,18 @@ import 'package:auto_route/annotations.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/background_widget.dart';
-import 'package:zippy_flutter/common/widgets/zp_app_bar.dart';
-import 'package:zippy_flutter/common/widgets/zp_button.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/common/widgets/zp_textfield.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/utils/extensions/validate_utils.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/widgets/background_widget.dart';
+import 'package:coconut_note/common/widgets/zp_app_bar.dart';
+import 'package:coconut_note/common/widgets/zp_button.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/common/widgets/zp_textfield.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/utils/extensions/validate_utils.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 @RoutePage()
 class FindPasswordSetNewPwScreen extends StatefulWidget {

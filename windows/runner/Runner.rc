@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "zippy_flutter" "\0"
+            VALUE "FileDescription", "coconut_note" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "zippy_flutter" "\0"
+            VALUE "InternalName", "coconut_note" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "zippy_flutter.exe" "\0"
-            VALUE "ProductName", "zippy_flutter" "\0"
+            VALUE "OriginalFilename", "coconut_note.exe" "\0"
+            VALUE "ProductName", "coconut_note" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

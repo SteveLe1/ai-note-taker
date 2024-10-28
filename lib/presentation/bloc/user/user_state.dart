@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:zippy_flutter/domain/models/responses/user/user_info_model.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
+import 'package:coconut_note/domain/models/responses/user/user_info_model.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
 
 class UserState extends Equatable {
   final StateStatus status;

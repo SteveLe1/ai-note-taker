@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:zippy_flutter/common/widgets/zp_floating_action.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_floating_action.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class BackgroundWidget extends StatelessWidget {
   const BackgroundWidget({
-    Key? key,
+    super.key,
     this.child,
     this.appBar,
     this.bottomNavigationBar,
@@ -13,7 +13,7 @@ class BackgroundWidget extends StatelessWidget {
     this.scaffoldKey,
     this.color = AppColors.black2,
     this.floatingActionButton
-  }) : super(key: key);
+  });
 
   final Widget? child;
   final PreferredSizeWidget? appBar;

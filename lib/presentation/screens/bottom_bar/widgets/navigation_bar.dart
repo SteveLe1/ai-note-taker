@@ -2,9 +2,9 @@ import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 import 'navigation_bar_item.dart';
 

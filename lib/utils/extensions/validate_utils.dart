@@ -1,4 +1,5 @@
-import 'package:zippy_flutter/utils/constants/strings.dart';
+
+import 'package:coconut_note/utils/constants/strings.dart';
 
 class ValidateUtils {
   static bool validatePassword(String value) {

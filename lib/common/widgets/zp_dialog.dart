@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 Future<T?> showCustomDialog<T>(
     BuildContext context, {

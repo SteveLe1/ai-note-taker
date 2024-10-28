@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/tag_container_item_widget.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/tag_container_item_widget.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class AllTags extends StatefulWidget {
   const AllTags({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class ZPBackButton extends StatelessWidget {
   const ZPBackButton({Key? key, this.onBack}) : super(key: key);

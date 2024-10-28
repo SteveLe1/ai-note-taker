@@ -1,14 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/bottom_sheet/bottom_sheet_common.dart';
-import 'package:zippy_flutter/common/widgets/zp_button.dart';
-import 'package:zippy_flutter/common/widgets/zp_check_box.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/bottom_sheet/bottom_sheet_common.dart';
+import 'package:coconut_note/common/widgets/zp_button.dart';
+import 'package:coconut_note/common/widgets/zp_check_box.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class TermsConditionsBottomSheet extends BottomSheetCommon {
   @override

@@ -1,4 +1,4 @@
-import 'package:zippy_flutter/utils/enum/enum.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
 
 class Tag {
   final String name;

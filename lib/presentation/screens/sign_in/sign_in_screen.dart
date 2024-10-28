@@ -2,21 +2,21 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/toast/toast_common.dart';
-import 'package:zippy_flutter/common/widgets/background_widget.dart';
-import 'package:zippy_flutter/common/widgets/zp_button.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/common/widgets/zp_text_button.dart';
-import 'package:zippy_flutter/common/widgets/zp_textfield.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/presentation/bloc/log_in/log_in_bloc.dart';
-import 'package:zippy_flutter/presentation/bloc/log_in/log_in_state.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/toast/toast_common.dart';
+import 'package:coconut_note/common/widgets/background_widget.dart';
+import 'package:coconut_note/common/widgets/zp_button.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/common/widgets/zp_text_button.dart';
+import 'package:coconut_note/common/widgets/zp_textfield.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/presentation/bloc/log_in/log_in_bloc.dart';
+import 'package:coconut_note/presentation/bloc/log_in/log_in_state.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 @RoutePage()
 class SignInScreen extends StatefulWidget {
@@ -37,7 +37,9 @@ class _SignInScreenState extends State<SignInScreen> {
             child: BlocConsumer<LogInBloc, LoginState>(
               listener: (context, state) {
               if (state.status == StateStatus.success) {
-                  appRouter.push(const BottomNavigationRoute());
+                  // appRouter.push(const BottomNavigationRoute());
+                  appRouter.push(const MyNoteRoute());
+                  
                 }
               },
               builder: (context, state) {
@@ -115,7 +117,8 @@ class _SignInScreenState extends State<SignInScreen> {
                                       width: MediaQuery.of(context).size.width,
                                       onPressed: () {
                                         // loginBloc.add(LoginAppEvent());
-                                        appRouter.push(const BottomNavigationRoute());
+                                        // appRouter.push(const BottomNavigationRoute());
+                                        appRouter.push(const MyNoteRoute());
                                       },
                                     ),
                                   );

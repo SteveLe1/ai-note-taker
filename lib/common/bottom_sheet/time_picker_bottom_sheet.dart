@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/bottom_sheet/bottom_sheet_common.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/bottom_sheet/bottom_sheet_common.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 class TimePickerBottomSheet extends BottomSheetCommon {
   FixedExtentScrollController _controller = FixedExtentScrollController();
@@ -142,7 +141,7 @@ class AmPm extends StatelessWidget {
         child: Center(
           child: ZPText(
             style: TextStyles.w600Size18Black3,
-            keyText: isItAm == true ? LocaleKeys.notification_settings_am : LocaleKeys.notification_settings_pm,
+            keyText: isItAm == true ? 'LocaleKeys.notification_settings_am' : 'LocaleKeys.notification_settings_pm',
           ),
         ),
       ),

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 496 496" xml:space="preserve">
+<path style="fill:#F15249;" d="M496,389.6c0,44.8-37.6,58.4-81.6,58.4H81.6C37.6,448,0,434.4,0,389.6V179.2C0,134.4,37.6,96,81.6,96
+	h332c44.8,0,82.4,38.4,82.4,83.2V389.6z"/>
+<path style="fill:#C93131;" d="M80,96h334.4c44,0,81.6,38.4,81.6,83.2v210.4c0,44.8-36,58.4-80.8,58.4"/>
+<circle style="fill:#EAEAEA;" cx="248" cy="272" r="132"/>
+<path style="fill:#C4C4C4;" d="M248,140.8c72.8,0,132,59.2,132,132s-59.2,132-132,132"/>
+<circle style="fill:#2F423F;" cx="248" cy="272" r="87.2"/>
+<circle style="fill:#009CC6;" cx="248" cy="272" r="52.8"/>
+<path style="fill:#007E9B;" d="M248,219.2c29.6,0,52.8,24,52.8,52.8c0,29.6-24,52.8-52.8,52.8"/>
+<g>
+	<path style="fill:#FFFFFF;" d="M246.4,243.2c0,16.8-13.6,30.4-30.4,30.4s-30.4-13.6-30.4-30.4s13.6-30.4,30.4-30.4
+		C232.8,212.8,246.4,226.4,246.4,243.2z"/>
+	<circle style="fill:#FFFFFF;" cx="282.4" cy="312.8" r="16"/>
+</g>
+<path style="fill:#EAEAEA;" d="M112,180c0,6.4-1.6,12-8,12H45.6c-6.4,0-13.6-5.6-13.6-12l0,0c0-6.4,5.6-12,12-12h56
+	C106.4,168,112,173.6,112,180L112,180z"/>
+<path style="fill:#C4C4C4;" d="M48,168h56c6.4,0,12,6.4,12,13.6l0,0c0,6.4-5.6,11.2-12,11.2"/>
+<path style="fill:#FFC114;" d="M72,88V68.8C72,57.6,82.4,48,93.6,48h75.2c12,0,23.2,11.2,23.2,22.4V88"/>
+<path style="fill:#FCA12A;" d="M168.8,48H128v40h64V70.4C192,59.2,180.8,48,168.8,48z"/>
+<circle style="fill:#3CC676;" cx="427.2" cy="371.2" r="30.4"/>
+<path style="fill:#0AA06E;" d="M448.8,348.8c12,12,12,31.2,0,43.2s-31.2,12-43.2,0"/>
+</svg>

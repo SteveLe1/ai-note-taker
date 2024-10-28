@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/presentation/screens/bottom_bar/widgets/navigation_bar.dart';
-import 'package:zippy_flutter/presentation/screens/bottom_bar/widgets/navigation_bar_item.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/presentation/screens/bottom_bar/widgets/navigation_bar.dart';
+import 'package:coconut_note/presentation/screens/bottom_bar/widgets/navigation_bar_item.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 @RoutePage()
 class BottomNavigationScreen extends StatefulWidget {

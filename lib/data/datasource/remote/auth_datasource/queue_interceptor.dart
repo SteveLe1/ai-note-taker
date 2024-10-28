@@ -6,13 +6,13 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
-import 'package:zippy_flutter/common/toast/toast_common.dart';
-import 'package:zippy_flutter/data/datasource/local/secure_storage.dart';
-import 'package:zippy_flutter/domain/models/requests/refresh_token/refresh_token_request.dart';
-import 'package:zippy_flutter/domain/models/responses/access_token_expire_model/access_token_expire_model.dart';
-import 'package:zippy_flutter/domain/models/responses/error_model/zp_base_error_model.dart';
-import 'package:zippy_flutter/domain/models/responses/refresh_token/refresh_token_response.dart';
-import 'package:zippy_flutter/utils/constants/strings.dart';
+import 'package:coconut_note/common/toast/toast_common.dart';
+import 'package:coconut_note/data/datasource/local/secure_storage.dart';
+import 'package:coconut_note/domain/models/requests/refresh_token/refresh_token_request.dart';
+import 'package:coconut_note/domain/models/responses/access_token_expire_model/access_token_expire_model.dart';
+import 'package:coconut_note/domain/models/responses/error_model/zp_base_error_model.dart';
+import 'package:coconut_note/domain/models/responses/refresh_token/refresh_token_response.dart';
+import 'package:coconut_note/utils/constants/strings.dart';
 
 bool showPopUpNoConnection = false;
 

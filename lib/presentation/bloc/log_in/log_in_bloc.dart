@@ -1,14 +1,13 @@
+import 'package:coconut_note/locator.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zippy_flutter/data/repository/auth/auth_repository.dart';
-import 'package:zippy_flutter/domain/models/requests/log_in/log_in_request.dart';
-import 'package:zippy_flutter/domain/models/responses/error_model/zp_base_error_model.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/locator.dart';
-import 'package:zippy_flutter/presentation/bloc/log_in/log_in_state.dart';
-import 'package:zippy_flutter/utils/device_id/device_id.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/extensions/validate_utils.dart';
+import 'package:coconut_note/data/repository/auth/auth_repository.dart';
+import 'package:coconut_note/domain/models/requests/log_in/log_in_request.dart';
+import 'package:coconut_note/domain/models/responses/error_model/zp_base_error_model.dart';
+import 'package:coconut_note/presentation/bloc/log_in/log_in_state.dart';
+import 'package:coconut_note/utils/device_id/device_id.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/extensions/validate_utils.dart';
 
 part 'log_in_event.dart';
 

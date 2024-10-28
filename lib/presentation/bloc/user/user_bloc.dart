@@ -1,10 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zippy_flutter/data/repository/auth/auth_repository.dart';
-import 'package:zippy_flutter/domain/models/responses/user/user_info_model.dart';
-import 'package:zippy_flutter/locator.dart';
-import 'package:zippy_flutter/presentation/bloc/user/user_event.dart';
-import 'package:zippy_flutter/presentation/bloc/user/user_state.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
+import 'package:coconut_note/data/repository/auth/auth_repository.dart';
+import 'package:coconut_note/domain/models/responses/user/user_info_model.dart';
+import 'package:coconut_note/locator.dart';
+import 'package:coconut_note/presentation/bloc/user/user_event.dart';
+import 'package:coconut_note/presentation/bloc/user/user_state.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
 
 class UserBloc extends Bloc<UserEvent, UserState> {
   final authRepository = locator<IAuthRepository>();

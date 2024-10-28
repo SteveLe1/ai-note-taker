@@ -32,4 +32,10 @@ class Images {
   static const String vipFilterBlack = 'assets/images/vip_filter_black.png';
   static const String vipFilterWhite = 'assets/images/vip_filter_white.png';
   static const String zippyLite = 'assets/images/zippy_lite.png';
+  static const String coconutLogo = 'assets/images/coconut_logo.png';
+  static const String recordAudio = 'assets/images/record_audio.png';
+  static const String uploadAudio = 'assets/images/upload_audio.jpg';
+  static const String uploadLink = 'assets/images/upload_link.png';
+  static const String allNote = 'assets/images/all_note.png';
+  static const String folders = 'assets/images/folders.png';
 }

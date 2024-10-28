@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 import 'zp_text.dart';
 

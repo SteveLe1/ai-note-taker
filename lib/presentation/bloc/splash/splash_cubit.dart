@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zippy_flutter/data/repository/auth/auth_repository.dart';
-import 'package:zippy_flutter/data/repository/local/local_repository.dart';
-import 'package:zippy_flutter/locator.dart';
+import 'package:coconut_note/data/repository/auth/auth_repository.dart';
+import 'package:coconut_note/data/repository/local/local_repository.dart';
+import 'package:coconut_note/locator.dart';
 
 part 'splash_state.dart';
 

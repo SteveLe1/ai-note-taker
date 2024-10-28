@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/zp_search_textfield.dart';
-import 'package:zippy_flutter/domain/entities/tag.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
+import 'package:coconut_note/common/widgets/zp_search_textfield.dart';
+import 'package:coconut_note/domain/entities/tag.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
 
 import 'tag_item_widget.dart';
 
@@ -35,7 +35,7 @@ class _TagSearchWidgetState extends State<TagSearchWidget> {
               });
             }
           },
-          prefixIcon: listTags.isNotEmpty
+          suffixIcon: listTags.isNotEmpty
               ? Container(
                   margin: EdgeInsets.only(top: 10.h, left: 10.w),
                   child: Column(

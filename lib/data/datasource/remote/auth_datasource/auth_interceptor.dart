@@ -2,7 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:zippy_flutter/data/datasource/local/secure_storage.dart';
+import 'package:coconut_note/data/datasource/local/secure_storage.dart';
 
 class AuthInterceptor extends Interceptor {
   final SecureStorage _secureStorage;

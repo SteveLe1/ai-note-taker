@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class TitledNavigationBarItem {
   /// The icon of this item.

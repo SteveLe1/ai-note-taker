@@ -1,21 +1,22 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/bottom_sheet/contact_cycle_bottom_sheet.dart';
-import 'package:zippy_flutter/common/shimmer/contact_shimmer.dart';
-import 'package:zippy_flutter/common/widgets/background_widget.dart';
-import 'package:zippy_flutter/common/widgets/zp_app_bar.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_list_tile.dart';
-import 'package:zippy_flutter/common/widgets/zp_search_textfield.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/presentation/screens/contact_list/widgets/filter_widget.dart';
-import 'package:zippy_flutter/presentation/screens/contact_list/widgets/total_friends_widget.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/bottom_sheet/contact_cycle_bottom_sheet.dart';
+import 'package:coconut_note/common/shimmer/contact_shimmer.dart';
+import 'package:coconut_note/common/widgets/background_widget.dart';
+import 'package:coconut_note/common/widgets/zp_app_bar.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_list_tile.dart';
+import 'package:coconut_note/common/widgets/zp_search_textfield.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+
+import 'package:coconut_note/presentation/screens/contact_list/widgets/filter_widget.dart';
+import 'package:coconut_note/presentation/screens/contact_list/widgets/total_friends_widget.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 @RoutePage()
 class ContactListScreen extends StatefulWidget {

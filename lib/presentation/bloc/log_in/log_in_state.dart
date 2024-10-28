@@ -1,6 +1,6 @@
 
 import 'package:equatable/equatable.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
 
 class LoginState extends Equatable {
   final StateStatus status;

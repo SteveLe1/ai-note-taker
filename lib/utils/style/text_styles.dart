@@ -34,6 +34,8 @@ class TextStyles {
 
   static const w500Size15Black3 = TextStyle(fontWeight: FontWeight.w500, fontSize: 15, color: AppColors.black3);
 
+  static const w500Size16Black3 = TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: AppColors.black3);
+
   static const w600Size17Black1 = TextStyle(fontWeight: FontWeight.w600, fontSize: 17, color: AppColors.black1);
 
   static const w600Size12Black8 = TextStyle(fontWeight: FontWeight.w600, fontSize: 12, color: AppColors.black8);
@@ -70,6 +72,8 @@ class TextStyles {
 
   static const w700Size25Black3 = TextStyle(fontSize: 25, fontWeight: FontWeight.w700, color: AppColors.black3);
 
+  static const w700Size32Black3 = TextStyle(fontSize: 32, fontWeight: FontWeight.w700, color: AppColors.black3);
+
   static const w700Size17Black8 = TextStyle(fontWeight: FontWeight.w700, fontSize: 17, color: AppColors.black8);
 
   static const w800Size22Black3 = TextStyle(fontWeight: FontWeight.w800, fontSize: 22, color: AppColors.black3);
@@ -79,6 +83,8 @@ class TextStyles {
   static const w600Size14Black5 = TextStyle(fontWeight: FontWeight.w600, fontSize: 14, color: AppColors.black5);
 
   static const w600Size18Black3 = TextStyle(fontWeight: FontWeight.w600, fontSize: 18, color: AppColors.black3);
+
+  static const w600Size22Black3 = TextStyle(fontWeight: FontWeight.w600, fontSize: 22, color: AppColors.black3);
 
   static const w400Size15Black3 = TextStyle(fontWeight: FontWeight.w400, fontSize: 15, color: AppColors.black3);
 
@@ -133,6 +139,8 @@ class TextStyles {
 
   static const w500Size15Red1 = TextStyle(fontWeight: FontWeight.w500, fontSize: 15, color: AppColors.red1);
 
+  static const w600Size16Red1 = TextStyle(fontWeight: FontWeight.w600, fontSize: 16, color: AppColors.red1);
+
   /// ----------GREY----------
 
   static const w400Grey12 = TextStyle(fontWeight: FontWeight.w400, fontSize: 12, color: AppColors.grey1);
@@ -147,9 +155,15 @@ class TextStyles {
 
   static const w500Size15Grey3 = TextStyle(fontWeight: FontWeight.w500, fontSize: 15, color: AppColors.grey3);
 
+  static const w500Size15GreySearch = TextStyle(fontWeight: FontWeight.w500, fontSize: 15, color: AppColors.greySearch);
+
+  static const w500Size16GreySearch = TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: AppColors.greySearch);
+
   static const w400Size11Grey1 = TextStyle(fontWeight: FontWeight.w400, fontSize: 11, color: AppColors.grey1);
 
   static const w700Size15Grey1 = TextStyle(fontWeight: FontWeight.w700, fontSize: 15, color: AppColors.grey1);
+
+  static const w700Size16Grey1 = TextStyle(fontWeight: FontWeight.w700, fontSize: 16, color: AppColors.grey1);
 
   static const w600Size15Grey5 = TextStyle(fontWeight: FontWeight.w600, fontSize: 15, color: AppColors.grey5);
 
@@ -166,6 +180,8 @@ class TextStyles {
   static const w500Size13Grey5 = TextStyle(fontWeight: FontWeight.w500, fontSize: 13, color: AppColors.grey5);
 
   static const w600Size16Grey3 = TextStyle(fontWeight: FontWeight.w600, fontSize: 16, color: AppColors.grey3);
+
+  static const w600Size12GreySubtitle = TextStyle(fontWeight: FontWeight.w600, fontSize: 12, color: AppColors.greySubtitle);
 
   /// ----------GREEN----------
 

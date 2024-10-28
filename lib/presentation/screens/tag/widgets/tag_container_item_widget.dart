@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/domain/entities/tag.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/tag_item_widget.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/domain/entities/tag.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/tag_item_widget.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class TagContainerItemWidget extends StatelessWidget {
   final TagColor tagColor;

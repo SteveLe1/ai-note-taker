@@ -1,6 +1,6 @@
+import 'package:coconut_note/utils/enum/enum.dart';
 import 'package:intl/intl.dart';
 import 'package:recase/recase.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
 
 extension StringExtension on String {
 

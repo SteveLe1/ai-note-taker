@@ -139,6 +139,12 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
+    MyNoteRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const MyNoteScreen(),
+      );
+    },
     NotificationCenterRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -599,6 +605,20 @@ class HomeRouteArgs {
   String toString() {
     return 'HomeRouteArgs{key: $key, bottomNavigationContext: $bottomNavigationContext}';
   }
+}
+
+/// generated route for
+/// [MyNoteScreen]
+class MyNoteRoute extends PageRouteInfo<void> {
+  const MyNoteRoute({List<PageRouteInfo>? children})
+      : super(
+          MyNoteRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'MyNoteRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for

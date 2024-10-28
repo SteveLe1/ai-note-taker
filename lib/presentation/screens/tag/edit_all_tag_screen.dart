@@ -1,20 +1,20 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/background_widget.dart';
-import 'package:zippy_flutter/common/widgets/zp_app_bar.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/add_group_bottom_sheet.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/add_tag_bottom_sheet.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/add_tag_item_widget.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/edit_delete_group_bottom_sheet.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/edit_delete_tag_bottom_sheet.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/tag_item_widget.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/widgets/background_widget.dart';
+import 'package:coconut_note/common/widgets/zp_app_bar.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/add_group_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/add_tag_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/add_tag_item_widget.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/edit_delete_group_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/edit_delete_tag_bottom_sheet.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/tag_item_widget.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 @RoutePage()
 class EditAllTagScreen extends StatefulWidget {

@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:zippy_flutter/config/failures/failure.dart';
-import 'package:zippy_flutter/data/datasource/local/get_storage_datasource.dart';
-import 'package:zippy_flutter/data/datasource/local/secure_storage.dart';
-import 'package:zippy_flutter/data/datasource/remote/auth_datasource/auth_datasource.dart';
-import 'package:zippy_flutter/domain/models/requests/log_in/log_in_request.dart';
-import 'package:zippy_flutter/domain/models/responses/log_in_response/log_in_response.dart';
+import 'package:coconut_note/config/failures/failure.dart';
+import 'package:coconut_note/data/datasource/local/get_storage_datasource.dart';
+import 'package:coconut_note/data/datasource/local/secure_storage.dart';
+import 'package:coconut_note/data/datasource/remote/auth_datasource/auth_datasource.dart';
+import 'package:coconut_note/domain/models/requests/log_in/log_in_request.dart';
+import 'package:coconut_note/domain/models/responses/log_in_response/log_in_response.dart';
 
 import 'auth_repository.dart';
 

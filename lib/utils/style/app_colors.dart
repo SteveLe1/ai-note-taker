@@ -18,6 +18,9 @@ class AppColors {
   static const grey6 = Color(0xFFEBECEE);
   static const grey7 = Color(0xFF31313B);
   static const grey8 = Color(0xFF50505D);
+  static const greySearch = Color(0xFF828189);
+  static const greyTextField = Color(0xFFe3e2ea);
+  static const greySubtitle = Color(0xFF929292);
 
   static const white1 = Color(0xFFFFFFFF);
   static const white2 = Color(0xFFFCFCFD);
@@ -49,6 +52,13 @@ class AppColors {
   static const brightZippy8 = Color(0xFFF7F6FF);
   static const brightZippy9 = Color(0xFFFCF5FF);
   static const brightZippy10 = Color(0xFFF9F5FE);
+
+  static const lightPurple = Color(0xFFf2f1f9);
+  static const purpleBorder = Color(0xFFb077fa);
+
+  static const blueButton = Color(0xFF302dff);
+
+  static const orangeButton = Color(0xFFfe6a60);
 
   static const red1 = Color(0xFFFF576B);
   static const lightRed2 = Color(0xFFFFF4F4);

@@ -1,4 +1,4 @@
-import 'package:zippy_flutter/common/widgets/cached_image.dart';
+import 'package:coconut_note/common/widgets/cached_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/bottom_sheet/bottom_sheet_common.dart';
-import 'package:zippy_flutter/common/toast/toast_common.dart';
-import 'package:zippy_flutter/common/widgets/zp_button.dart';
-import 'package:zippy_flutter/common/widgets/zp_icon.dart';
-import 'package:zippy_flutter/common/widgets/zp_list_tile.dart';
-import 'package:zippy_flutter/common/widgets/zp_text.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/bottom_sheet/bottom_sheet_common.dart';
+import 'package:coconut_note/common/toast/toast_common.dart';
+import 'package:coconut_note/common/widgets/zp_button.dart';
+import 'package:coconut_note/common/widgets/zp_icon.dart';
+import 'package:coconut_note/common/widgets/zp_list_tile.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 class ContactCycleBottomSheet extends BottomSheetCommon {
   ValueChanged<int> onChanged;
@@ -18,12 +17,12 @@ class ContactCycleBottomSheet extends BottomSheetCommon {
   ContactCycleBottomSheet({required this.onChanged});
 
   List<ContactCycle> listContactCycle = const [
-    ContactCycle(imageIcon: Images.vipFilter, title: LocaleKeys.contact_list_one_week),
-    ContactCycle(imageIcon: Images.sFilter, title: LocaleKeys.contact_list_one_month),
-    ContactCycle(imageIcon: Images.aFilter, title: LocaleKeys.contact_list_one_quarter),
-    ContactCycle(imageIcon: Images.bFilter, title: LocaleKeys.contact_list_six_month),
-    ContactCycle(imageIcon: Images.minusFilter, title: LocaleKeys.contact_list_blacklist),
-    ContactCycle(imageIcon: Images.closeFilter, title: LocaleKeys.contact_list_unspecified),
+    // ContactCycle(imageIcon: Images.vipFilter, title: LocaleKeys.contact_list_one_week),
+    // ContactCycle(imageIcon: Images.sFilter, title: LocaleKeys.contact_list_one_month),
+    // ContactCycle(imageIcon: Images.aFilter, title: LocaleKeys.contact_list_one_quarter),
+    // ContactCycle(imageIcon: Images.bFilter, title: LocaleKeys.contact_list_six_month),
+    // ContactCycle(imageIcon: Images.minusFilter, title: LocaleKeys.contact_list_blacklist),
+    // ContactCycle(imageIcon: Images.closeFilter, title: LocaleKeys.contact_list_unspecified),
   ];
   int selectedIndex = 0;
 
@@ -45,7 +44,7 @@ class ContactCycleBottomSheet extends BottomSheetCommon {
             Padding(
               padding: EdgeInsets.only(bottom: 20.h),
               child:
-                  ZPText(keyText: LocaleKeys.contact_list_contact_cycle_settings, style: TextStyles.w800Size22Black3),
+                  ZPText(keyText:" LocaleKeys.contact_list_contact_cycle_settings", style: TextStyles.w800Size22Black3),
             ),
             Expanded(
                 child: ListView.builder(
@@ -87,14 +86,14 @@ class ContactCycleBottomSheet extends BottomSheetCommon {
                 children: [
                   ZPButton(
                       width: 106.w,
-                      text: LocaleKeys.cancel,
+                      text: 'LocaleKeys.cancel',
                       textStyle: TextStyles.w600Size16Black8,
                       color: AppColors.white4,
                       onPressed: () => appRouter.pop()),
                   SizedBox(width: 12.w),
                   Expanded(
                       child: ZPButton(
-                          text: LocaleKeys.apply,
+                          text: 'LocaleKeys.apply',
                           textStyle: TextStyles.w600Size16White1,
                           color: AppColors.black3,
                           onPressed: () {

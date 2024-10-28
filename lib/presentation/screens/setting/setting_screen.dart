@@ -1,14 +1,15 @@
 import 'package:auto_route/annotations.dart';
+import 'package:coconut_note/common/widgets/zp_button.dart';
+import 'package:coconut_note/common/widgets/zp_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/common/widgets/background_widget.dart';
-import 'package:zippy_flutter/common/widgets/zp_app_bar.dart';
-import 'package:zippy_flutter/config/routes/app_router.dart';
-import 'package:zippy_flutter/generated/locale_keys.g.dart';
-import 'package:zippy_flutter/presentation/screens/setting/widgets/setting_item_widget.dart';
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
-import 'package:zippy_flutter/utils/style/text_styles.dart';
+import 'package:coconut_note/common/widgets/background_widget.dart';
+import 'package:coconut_note/config/routes/app_router.dart';
+import 'package:coconut_note/generated/locale_keys.g.dart';
+import 'package:coconut_note/presentation/screens/setting/widgets/setting_item_widget.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/style/text_styles.dart';
 
 @RoutePage()
 class SettingScreen extends StatelessWidget {
@@ -18,84 +19,166 @@ class SettingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BackgroundWidget(
       color: AppColors.white4,
-      appBar: ZPAppBar(
-        context: context,
-        title: LocaleKeys.setting_settings,
-        textStyle: TextStyles.w700Size17Black1,
-        centerTitle: true,
-      ),
-      child: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.fromLTRB(30.w, 11.h, 20.w, 0),
-            color: AppColors.white1,
-            child: Column(
-              children: [
-                SettingItemWidget(
-                  icon: Ics.icMail,
-                  textTitle: LocaleKeys.setting_change_account_mail,
-                  onPressed: () {
-                    appRouter.push(const ChangeAccountMailRoute());
-                  },
-                ),
-                SettingItemWidget(
-                  icon: Ics.icPassword,
-                  textTitle: LocaleKeys.setting_change_password,
-                  onPressed: () {
-                    appRouter.push(const ChangePasswordRouteStep1());
-                  },
-                ),
-                SettingItemWidget(
-                  icon: Ics.icNotie,
-                  textTitle: LocaleKeys.setting_alarm_settings,
-                  onPressed: () {
-                    appRouter.push(const NotificationSettingsRoute());
-                  },
-                ),
-              ],
-            ),
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(16.0.h),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Align(
+                alignment: Alignment.centerRight,
+                child: InkWell(
+                    onTap: () => Navigator.of(context).pop(),
+                    child: Container(
+                        width: 32.w,
+                        height: 32.h,
+                        padding: EdgeInsets.all(4.0.w),
+                        decoration: const BoxDecoration(color: AppColors.greyTextField, shape: BoxShape.circle),
+                        child:  const Icon(Icons.close, color: AppColors.greySearch,)
+                    )),
+              ),
+              SizedBox(height: 12.h,),
+              ZPText(keyText: "Settings", style: TextStyles.w700Size32Black3,),
+              SizedBox(height: 12.h,),
+              Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ZPText(keyText: "For you", style: TextStyles.w600Size22Black3,),
+                        SizedBox(height: 12.h,),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12.0.h),
+                          decoration: BoxDecoration(
+                              color: AppColors.white1,
+                              borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: Column(
+                            children: [
+                              SettingItemWidget(
+                                icon: Ics.icMail,
+                                textTitle: "Give Coconote 5 stars",
+                                onPressed: () {
+                                  appRouter.push(const ChangeAccountMailRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icPassword,
+                                textTitle: "Invite a friend",
+                                onPressed: () {
+                                  appRouter.push(const ChangePasswordRouteStep1());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icNotie,
+                                textTitle: "Join the Discord",
+                                isShowDivider: false,
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 20.h),
+                        ZPButton(text: "Get Unlimited Notes", textStyle: TextStyles.w700Size17White1,
+                          color: AppColors.blueButton,
+                          onPressed: () {},),
+                        SizedBox(height: 20.h),
+                        ZPText(keyText: "Support & feedback", style: TextStyles.w600Size22Black3,),
+                        SizedBox(height: 12.h,),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12.0.h),
+                          decoration: BoxDecoration(
+                              color: AppColors.white1,
+                              borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: SettingItemWidget(
+                            isShowDivider: false,
+                            icon: Ics.icMail,
+                            textTitle: "Help Center",
+                            onPressed: () {
+                              appRouter.push(const ChangeAccountMailRoute());
+                            },
+                          ),
+                        ),
+                        SizedBox(height: 20.h,),
+                        ZPText(keyText: "Account", style: TextStyles.w600Size22Black3,),
+                        ZPText(keyText: "abczxc@gmail.com", style: TextStyles.w500Size14Grey1,),
+                        SizedBox(height: 20.h,),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12.0.h),
+                          decoration: BoxDecoration(
+                              color: AppColors.white1,
+                              borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: Column(
+                            children: [
+                              SettingItemWidget(
+                                icon: Ics.icMail,
+                                textTitle: "Failed Recordings",
+                                onPressed: () {
+                                  appRouter.push(const ChangeAccountMailRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icPassword,
+                                textTitle: "Family Plan",
+                                onPressed: () {
+                                  appRouter.push(const ChangePasswordRouteStep1());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icNotie,
+                                textTitle: "Restore Purchases",
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icNotie,
+                                textTitle: "Term of Service",
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icNotie,
+                                textTitle: "Privacy Policy",
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icLogout,
+                                textTitle: "Sign Out",
+                                textStyle: TextStyles.w600Size16Red1,
+                                iconColor: AppColors.red1,
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                              SettingItemWidget(
+                                icon: Ics.icDelete,
+                                isShowDivider: false,
+                                textTitle: "Delete Account",
+                                textStyle: TextStyles.w600Size16Red1,
+                                iconColor: AppColors.red1,
+                                onPressed: () {
+                                  appRouter.push(const NotificationSettingsRoute());
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+              ),
+
+            ],
           ),
-          SizedBox(height: 15.h),
-          Container(
-            padding: EdgeInsets.fromLTRB(30.w, 11.h, 20.w, 0),
-            color: AppColors.white1,
-            child: Column(
-              children: [
-                SettingItemWidget(
-                  icon: Ics.icList,
-                  textTitle: LocaleKeys.setting_event_announcement,
-                  onPressed: () {
-                    appRouter.push(const EventNoticeRoute());
-                  },
-                ),
-                SettingItemWidget(
-                  icon: Ics.icTagLine,
-                  textTitle: LocaleKeys.setting_tag_management,
-                  onPressed: () {},
-                ),
-                SettingItemWidget(
-                  icon: Ics.icCrownFill,
-                  textTitle: LocaleKeys.setting_premium_pricing_plan,
-                  iconColor: AppColors.mint1,
-                  onPressed: () {
-                    appRouter.push(const PremiumPricingPlanRoute());
-                  },
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 15.h),
-          Container(
-            padding: EdgeInsets.fromLTRB(30.w, 11.h, 20.w, 0),
-            color: AppColors.white1,
-            child: SettingItemWidget(
-              icon: Ics.icLogout,
-              textTitle: LocaleKeys.setting_log_out,
-              isShowTrailing: false,
-              onPressed: () {appRouter.replaceAll([const SignInRoute()]);},
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }

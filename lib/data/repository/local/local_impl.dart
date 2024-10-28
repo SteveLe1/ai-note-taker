@@ -1,5 +1,5 @@
-import 'package:zippy_flutter/data/datasource/local/secure_storage.dart';
-import 'package:zippy_flutter/data/repository/local/local_repository.dart';
+import 'package:coconut_note/data/datasource/local/secure_storage.dart';
+import 'package:coconut_note/data/repository/local/local_repository.dart';
 
 class LocalRepositoryImpl extends ILocalRepository {
   final SecureStorage _secureStorage;

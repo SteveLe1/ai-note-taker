@@ -11,7 +11,8 @@ class Const {
   static const double tokenEarnMaxPerDay = 800;
 
   static const double limitAmountInput = 99999999;
-  static const String baseApi = 'https://zippy-api.sotatek.works';
+  // static const String baseApi = 'https://zippy-api.sotatek.works';
+  static const String baseApi = 'https://abc.com';
 
   Const._();
 

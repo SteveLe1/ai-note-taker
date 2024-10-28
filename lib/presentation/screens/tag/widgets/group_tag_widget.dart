@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zippy_flutter/presentation/screens/tag/widgets/tag_item_widget.dart';
-import 'package:zippy_flutter/utils/enum/enum.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/presentation/screens/tag/widgets/tag_item_widget.dart';
+import 'package:coconut_note/utils/enum/enum.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
 
 class GroupTagWidget extends StatelessWidget {
   const GroupTagWidget({super.key});

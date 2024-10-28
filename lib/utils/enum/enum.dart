@@ -1,7 +1,8 @@
 import 'dart:ui';
 
-import 'package:zippy_flutter/utils/resources/resources.dart';
-import 'package:zippy_flutter/utils/style/app_colors.dart';
+import 'package:coconut_note/utils/resources/resources.dart';
+import 'package:coconut_note/utils/style/app_colors.dart';
+
 
 enum MessageType { error, success }
 

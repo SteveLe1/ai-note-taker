@@ -1,10 +1,10 @@
+import 'package:coconut_note/data/repository/local/local_impl.dart';
+import 'package:coconut_note/data/repository/local/local_repository.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:zippy_flutter/data/repository/local/local_impl.dart';
-import 'package:zippy_flutter/data/repository/local/local_repository.dart';
 
 import 'data/datasource/local/get_storage_datasource.dart';
 import 'data/datasource/local/secure_storage.dart';

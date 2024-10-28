@@ -82,4 +82,6 @@ class Ics {
   static const String icUnspecified = 'assets/icons/ic_unspecified.svg';
   static const String icUsers = 'assets/icons/ic_users.svg';
   static const String icWhatever = 'assets/icons/ic_whatever.svg';
+  static const String uploadText = 'assets/icons/ic_upload_text.svg';
+  static const String scanText = 'assets/icons/ic_scan_text.svg';
 }
