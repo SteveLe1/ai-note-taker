@@ -117,6 +117,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const FindPasswordVerifyEmailScreen(),
       );
     },
+    FlashCardNoteRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FlashCardNoteScreen(),
+      );
+    },
     FriendDetailRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -143,6 +149,12 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const MyNoteScreen(),
+      );
+    },
+    NoteDetailRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const NoteDetailScreen(),
       );
     },
     NotificationCenterRoute.name: (routeData) {
@@ -543,6 +555,20 @@ class FindPasswordVerifyEmailRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [FlashCardNoteScreen]
+class FlashCardNoteRoute extends PageRouteInfo<void> {
+  const FlashCardNoteRoute({List<PageRouteInfo>? children})
+      : super(
+          FlashCardNoteRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FlashCardNoteRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [FriendDetailScreen]
 class FriendDetailRoute extends PageRouteInfo<void> {
   const FriendDetailRoute({List<PageRouteInfo>? children})
@@ -617,6 +643,20 @@ class MyNoteRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'MyNoteRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [NoteDetailScreen]
+class NoteDetailRoute extends PageRouteInfo<void> {
+  const NoteDetailRoute({List<PageRouteInfo>? children})
+      : super(
+          NoteDetailRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'NoteDetailRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

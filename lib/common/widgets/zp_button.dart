@@ -46,6 +46,7 @@ class ZPButton extends StatelessWidget {
           height: height ?? 56.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(radius),
+            border: Border.all(color: borderColor ?? Colors.transparent),
             gradient: gradient,
           ),
           child: ElevatedButton(

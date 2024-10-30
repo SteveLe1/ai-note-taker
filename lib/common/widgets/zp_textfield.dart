@@ -37,7 +37,8 @@ class ZPTextField extends StatefulWidget {
         this.contentPadding,
           this.borderColor = AppColors.black4,
         this.fillColor = AppColors.black4,
-        this.obscureText = false
+        this.obscureText = false,
+        this.borderRadius
       })
       : super(key: key);
 
@@ -70,6 +71,7 @@ class ZPTextField extends StatefulWidget {
   final Color borderColor;
   final Color fillColor;
   final bool obscureText;
+  final double? borderRadius;
 
   @override
   State<ZPTextField> createState() => _ZPTextFieldState();
@@ -95,7 +97,7 @@ class _ZPTextFieldState extends State<ZPTextField> {
     final border = widget.noBorder
         ? InputBorder.none
         : OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
       borderSide: BorderSide(
         color: widget.borderColor,
       ),
@@ -104,7 +106,7 @@ class _ZPTextFieldState extends State<ZPTextField> {
     final enabledBorder = widget.noBorder
         ? InputBorder.none
         : OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
       borderSide: BorderSide(
         color: widget.borderColor,
       ),
@@ -113,7 +115,7 @@ class _ZPTextFieldState extends State<ZPTextField> {
     final errorBorder = widget.noBorder
         ? InputBorder.none
         : OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
       borderSide: const BorderSide(
         color: AppColors.red1,
       ),

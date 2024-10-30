@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:coconut_note/common/widgets/zp_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +11,7 @@ import 'package:coconut_note/common/widgets/zp_text.dart';
 import 'package:coconut_note/utils/resources/resources.dart';
 import 'package:coconut_note/utils/style/app_colors.dart';
 import 'package:coconut_note/utils/style/text_styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class WeblinkBottomSheet extends BottomSheetCommon {
@@ -100,7 +103,26 @@ class WeblinkBottomSheet extends BottomSheetCommon {
                         color: AppColors.grey1,
                         radius: 100,
                         padding: EdgeInsets.all(12.h),
-                        onPressed: (){},
+                        onPressed: () async{
+                          if (Platform.isIOS) {
+                            if (await canLaunchUrl(Uri.parse(
+                                "youtube://www.youtube.com/watch?v=v-K5zN87mx0"),)) {
+                              await launchUrl(Uri.parse(
+                                  "youtube://www.youtube.com/watch?v=v-K5zN87mx0"));
+                            } else {
+                              if (await canLaunchUrl(Uri.parse(
+                                  "https://www.youtube.com/watch?v=v-K5zN87mx0"),)) {
+                                await launchUrl(Uri.parse(
+                                    "https://www.youtube.com/watch?v=v-K5zN87mx0"));
+                              } else {
+                                throw 'Could not launch ';
+                              }
+                            }
+                          } else {
+                            await launchUrl(Uri.parse("https://www.youtube.com/watch?v=v-K5zN87mx0"));
+
+                          }
+                        },
                       ),
                     ),
                   ),

@@ -93,10 +93,12 @@ class _MyNoteScreenState extends State<MyNoteScreen> {
                             ),
                             text: "Welcome! Here's how to get the most out of Coconote",
                             subText: "24 Oct 2024",
-                            onPressed: () {},
-                            onPressedLeading: () => NewRegistrationBottomSheet(onChanged: (value) {
-                              debugPrint("value $value");
-                            }).showBottomSheet(context),
+                            onPressed: () {
+                              appRouter.push(const NoteDetailRoute());
+                            },
+                            // onPressedLeading: () => NewRegistrationBottomSheet(onChanged: (value) {
+                            //   debugPrint("value $value");
+                            // }).showBottomSheet(context),
                             paddingTrailing : EdgeInsets.only(right: 8.0.h),
                           );
                         }),

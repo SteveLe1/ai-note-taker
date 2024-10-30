@@ -25,12 +25,13 @@ class ZPAppBar extends AppBar {
     shadowColor: backgroundColor,
     centerTitle: centerTitle ?? false,
     automaticallyImplyLeading: false,
-    leadingWidth: disableLeading ? 0 : 44.w,
+    leadingWidth: disableLeading ? 0 : 120.w,
     elevation: 0,
     titleSpacing: 0,
     leading: disableLeading
         ? const SizedBox()
         : Container(
+        alignment: Alignment.centerLeft,
         margin: EdgeInsets.only(left: 8.w),
         child: leadingWidget ??
             ZPBackButton(

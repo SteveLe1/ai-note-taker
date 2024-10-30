@@ -54,6 +54,7 @@ class AppColors {
   static const brightZippy10 = Color(0xFFF9F5FE);
 
   static const lightPurple = Color(0xFFf2f1f9);
+  static const lightPurple1 = Color(0xFFb7acc2);
   static const purpleBorder = Color(0xFFb077fa);
 
   static const blueButton = Color(0xFF302dff);

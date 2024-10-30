@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:coconut_note/presentation/screens/flash_card_note_screen/flash_card_note_screen.dart';
 import 'package:coconut_note/presentation/screens/my_note/my_note_screen.dart';
+import 'package:coconut_note/presentation/screens/note_detail/note_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:coconut_note/presentation/screens/bottom_bar/bottom_navigation_screen.dart';
 import 'package:coconut_note/presentation/screens/contact_list/contact_list_natigation_screen.dart';
@@ -120,6 +122,8 @@ class AppRouter extends _$AppRouter {
     AutoRoute(path: '/notification_settings',page: NotificationSettingsRoute.page),
     AutoRoute(path: '/premium_pricing_plan',page: PremiumPricingPlanRoute.page),
     AutoRoute(path: '/my_note',page: MyNoteRoute.page),
+    AutoRoute(path: '/note-detail',page: NoteDetailRoute.page),
+    AutoRoute(path: '/flash-card-note',page: FlashCardNoteRoute.page),
   ];
 }
 
